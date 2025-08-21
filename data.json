@@ -1,0 +1,10 @@
+{
+  "blockSize": 110,
+  "showFileExtensions": true,
+  "sortBy": "name",
+  "gridGap": 16,
+  "fontSize": 13,
+  "textColor": "#000000",
+  "nodeWidth": 100,
+  "nodeHeight": 30
+}

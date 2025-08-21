@@ -1,0 +1,29 @@
+{
+  "name": "vault-canvas-view",
+  "version": "0.1.0",
+  "description": "Visualize your vault structure as a draggable canvas where you can move and organize files and folders.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [
+    "obsidian-plugin",
+    "canvas",
+    "vault",
+    "files",
+    "folders",
+    "drag-drop"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "obsidian": "latest",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.0",
+    "vite": "^4.5.0",
+    "vite-tsconfig-paths": "^4.3.2"
+  }
+}

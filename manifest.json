@@ -1,0 +1,10 @@
+{
+  "id": "block-manager",
+  "name": "Block Manager",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "A block-based file manager for Obsidian with grid layout, drag-and-drop operations, and intuitive folder navigation.",
+  "author": "t3ma",
+  "authorUrl": "https://github.com/temaprint",
+  "isDesktopOnly": true
+}
