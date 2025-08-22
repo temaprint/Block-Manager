@@ -29,8 +29,8 @@ export default class VaultCanvasPlugin extends Plugin {
 
         // Command to open the view
         this.addCommand({
-            id: "open-vault-canvas",
-            name: "Open Block Manager View",
+            id: "open-view",
+            name: "Open View",
             callback: () => this.activateView(),
         });
 
@@ -40,7 +40,6 @@ export default class VaultCanvasPlugin extends Plugin {
 
     onunload() {
         console.log("Vault Canvas Plugin unloaded");
-        this.app.workspace.detachLeavesOfType(VIEW_TYPE_VAULT_CANVAS);
     }
 
     async activateView() {

@@ -190,8 +190,8 @@ export class VaultCanvasView extends ItemView {
                 .onClick(() => {
                     if (file instanceof TFile) {
                         this.app.workspace.openLinkText(file.path, "", false);
-                    } else {
-                        this.currentFolder = file as TFolder;
+                    } else if (file instanceof TFolder) {
+                        this.currentFolder = file;
                         this.renderBlocks();
                         this.setupNavigation();
                     }
@@ -212,7 +212,7 @@ export class VaultCanvasView extends ItemView {
                 .onClick(async () => {
                     if (confirm(`Are you sure you want to delete "${file.name}"?`)) {
                         try {
-                            await this.app.vault.delete(file);
+                            await this.app.fileManager.trashFile(file);
                             this.renderBlocks();
                         } catch (error) {
                             console.error("Failed to delete file:", error);
